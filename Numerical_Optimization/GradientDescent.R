@@ -28,4 +28,14 @@ method_gd <- function(fn, fn_deriv, init_val, tol=0.01, learn_rate=0.001) {
                val_fun=fn(x_new)))
 }
 
+# Show the result
 method_gd(eval_f, eval_f1, 10)
+
+# $cnt
+# [1] 871
+
+# $val_opt
+# [1] 2.576934
+
+# $val_fun
+# [1] 2.48672
