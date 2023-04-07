@@ -11,6 +11,7 @@ x_old <- 10
 x_new <- x_old - 0.001 * eval_f1(x_old)
 x_old <- x_new
 
+# Skeleton
 method_gd <- function(fn, fn_deriv, init_val, tol=0.01, learn_rate=0.001) {
   x_old <- init_val
   cnt <- 1
