@@ -23,6 +23,8 @@ method_gd <- function(fn, fn_deriv, init_val, tol=0.01, learn_rate=0.001) {
     } else {
       x_old <- x_new
     }
+# if (abs(fn(x_new)- fn(x_old)) < tol) {break}
+# else {x_old <- x_new} 라고 생각했음
   }
   return (list(cnt=cnt,
                val_opt=x_new,
